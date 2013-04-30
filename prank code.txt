@@ -1,0 +1,36 @@
+	if (time.getDate()==1 && time.getMonth()==3) {
+		if (Math.random()*20.0<1.0) document.body.innerHTML='<link rel="stylesheet" href="/images/game.css"></head><body><div style="border: 1px solid black; background: rgb(204, 136, 136) none repeat scroll 0%; margin-bottom: 10px; margin-left: 25%; margin-right: 25%; width: 50%; text-align: center; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;" valign="top" text-align="center">Something has gone horribly wrong (server error)! Either it\'s a bug in the code, or we are currently experiencing \'King fiddling time. Please remain seated with your seatbelts fastened for the time being, and post a bug report to the wiki if the problem recurs.</div><center><table border="0" cellpadding="0" cellspacing="0" width="500"><tbody><tr><td></td><td width="100"><img src="/images/h100.gif"></td><td width="100"><img src="/images/h100.gif"></td><td width="100"><img src="/images/h100.gif"></td><td width="100"><img src="/images/h100.gif"></td><td width="100"><img src="/images/h100.gif"></td></tr><tr><td><img src="/images/v100.gif"></td><td>&nbsp;</td><td></td><td class="road road_Wilder road_v"><div class="monster monster_earth">Balrog</div><input accesskey="n" name="act_n" src="/images/fight.png" class="moveicon" type="image">&nbsp;</td><td></td><td>&nbsp;</td></tr><tr><td><img src="/images/v100.gif"></td><td>&nbsp;</td><td class="road road_Jungle road_h"><div class="monster monster_earth">Nightmare Dragon</div><input accesskey="w" name="act_w" src="/images/fight.png" lass="moveicon" type="image">&nbsp;</td><td id="c" class="location"><div>Heath</div><div class="player player_water last_fifteen">'+document.getElementById('username').innerHTML+'</div></td><td class="road road_Wilder road_h"><div class="monster monster_air">Thunderchild</div><input accesskey="e" name="act_e" src="/images/fight.png" class="moveicon" type="image">&nbsp;</td><td>&nbsp;</td></tr><tr><td><img src="/images/v100.gif"></td><td>&nbsp;</td><td></td><td class="road road_Tunnel road_v"><div class="monster monster_neutral">Huge Reptile (supercalifragilisticexpialadocious)</div><input accesskey="s" name="act_s" src="/images/fight.png" class="moveicon" type="image">&nbsp;</td><td></td><td>&nbsp;</td></tr></tbody></table></center>';
+	}
+	else if (time.getDate()==25 && time.getMonth()==8) {
+		if (Math.random()<.5) {
+			var cabal=['There is no cabal here.','No cabal.','There is a complete lack of cabals here.','What cabal?','Really, now, do you honestly think there would be a cabal here?  Of course there isn\'t.','If this were a cabal, you would feel vindicated in your persecution.  Unfortunately, this isn\'t a cabal.','I hate cabals as much as you do. If I found a cabal, I\'d tell you immediately so we could get rid of it.','How many times do I have to tell you there is no cabal?','Completely lacks a cabal.','Death to the nonexistent cabal!','I wish there was a cabal here, so I could root it out and destroy it.','If there is no cabal, I just might have to start one.','Make the scary cabal go away!','TINC.'];
+			var startLocs=document.getElementsByTagName('table');
+			var rand=Math.floor(Math.random()*startLocs.length);
+			var error=true;
+			var errorCount=0;	// something to stop us if it turns out to be impossible in some way.
+			while (error && errorCount<10) {
+				error=false;
+				try {
+					var node=startLocs[rand];
+					GM_log('rand:'+rand);
+					do {
+						if (node.hasChildNodes()) {
+							var newChild=node.childNodes[parseInt(Math.random()*node.childNodes.length)];
+							if (newChild.nodeType==1) node=newChild;
+						}
+					} while (Math.random()<0.8 && node.hasChildNodes() && node.firstChild.hasChildNodes());
+					var cabalNode=document.createElement('span');
+					cabalNode.setAttribute('style','font-size:x-small');
+					cabalNode.innerHTML=' '+cabal[parseInt(Math.random()*cabal.length)]+' ';
+					node.appendChild(cabalNode);
+				}
+				catch(ex) {
+					error=true;
+					errorCount++;
+					GM_log('node placement error:'+ex);
+				}
+			}
+			if (errorCount==10) GM_log('too many errors!');
+			//GM_log('cabal node appended!'+node.innerHTML);
+		}
+	}

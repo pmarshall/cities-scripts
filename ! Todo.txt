@@ -1,0 +1,645 @@
+TODO:
+
+Button masher: "record sequence"/"playback sequence", or possibly "repeat next X actions Y times"
+
+Consider (again) moving Outfitter's inventory info into the library.  Drawback: harder to play with the "strip" items, 
+	harder to play with "none" items, in the outfitter script itself.  Also, isPet and isArmor still have separate, useful, uses, and cannot be rolled into isEquip.
+
+STILL do more timed-database stuff.  Also consider some kind of "select from monster_drop where timestamp > TIME_LAST_NEW_ITEM_WAS_ADDED_TO_THIS_MONSTER" or something.
+
+
+
+
+OLD REFERENCE MESSAGES:
+
+You attack the 564 Small Earth Dragon.
+You miss.
+The 6376 Small Earth Dragon misses you.
+[2007-02-08 04:14:44]
+You attack the Small Earth Dragon.
+You cause 0 damage, and receive 0 xp.
+The Small Earth Dragon misses you.
+[2007-02-08 04:14:17]
+You attack the Small Earth Dragon.
+The Small Earth Dragon gets angry.
+The Small Earth Dragon causes 5 damage.
+[2007-02-08 04:12:37]
+You are at the cutting-edge of fashion.
+Now using Wand of Anger.
+[2007-02-08 02:21:17]
+Now using Bit of Silver.
+[2007-02-08 01:34:39]
+You lose a Record (0).
+[2007-02-08 01:34:29]
+Now using Bag (One With Everything).
+[2007-02-08 01:34:08]
+You attack the Fire Fox.
+You cause 30 damage, and receive 120 xp.
+You slay the 345 Fire Fox.
+You gain a Record.
+You gain 27 Gold Pieces.
+You gain a Sulphur.
+
+
+Flying healer station:
+You lose 1000 Gold Pieces (45266).
+That feels so much better.
+[2007-02-10 21:58:14]
+You wait for the healer to arrive.
+[2007-02-10 21:58:12]
+You wait for the healer to arrive.
+
+parrots:
+You attack Bobby the Parrot.
+The parrot takes your Lion Fish and flaps away, leaving a pile of cool things.
+You lose a Lion Fish (0).
+You gain an Arrow (0).
+You gain a Magic Bean (40).
+You gain a Gold Piece (10432).
+You gain a Hop West Spell (1).
+You gain a Sharp Sword (0).
+Bobby the Parrot misses you.
+Now using Fists.
+[2007-02-11 12:44:09]
+
+cow-milking:
+You attack the Cow.
+You gain a Pint of Cream (5).
+You cause 0 damage, and receive 0 xp.
+The Cow causes 2 damage.
+
+Weapon breakage:
+You attack the Small Earth Dragon.
+You cause 100 damage, and receive 500 xp.
+Your Lance (40 50%) has worn out.
+You lose a Lance (0).
+The Small Earth Dragon misses you.
+Now using Fists.
+
+Cornucopia messages:
+You reach into the cornucopia, and pull something out.
+You gain an Egg.
+You up-end the cornucopia, and out pours some liquid. 
+You gain a Pint of Cream.
+
+Fruit-hunting messages in a jungle:
+You gain 3 Pieces of Wood (5).
+("get wood", 10AP)
+You gain 30 Pieces of Wood (35).
+You gain a Lemon (1).
+You gain an Orange (1).
+("get lots of wood",100AP)
+
+Fighting with pets:
+You attack the Sylph.
+You cause 0 points of damage, and receive 0 experience.
+Kitty misses the Sylph.
+James Bond attacks the Sylph for 1 damage.
+Tiger attacks the Sylph for 1 damage.
+Octopussy misses the Sylph.
+Fluffy misses the Sylph.
+The Sylph causes 2 points of damage.
+
+Illusions:
+You attack the Blork.
+You cause 1 damage, and receive 0 xp.
+It was just an illusion!
+You slay the Blork.
+[2007-02-15 12:33:44]
+Now using Cruel Blade.
+[2007-02-15 12:33:38]
+You attack the Blork.
+You cause 0 damage, and receive 0 xp.
+It was just an illusion!
+The Blork causes 0 damage.
+
+Gifts at trading posts (or parties):
+You gain 6000 Gold Pieces (10709).
+Baron QuantumSnark gives you 6000 Gold Pieces.
+
+When you hit with a puzzlebox (next 5 attacks miss?):
+You attack the Air Dragon.
+The Air Dragon looks a bit confused.
+The Air Dragon attacks 6 times.
+The Air Dragon misses you.
+The Air Dragon misses you.
+
+Angry bow upgrading:
+You are very warm.
+You attack the Bull.
+You cause 10 damage, and receive 30 xp.
+Your weapon gets more ticked off...
+You lose an A bit put-out Bow (0).
+You gain an Annoyed Bow (0).
+The Bull causes 3 damage.
+Now using Fists.
+
+BUG: apparently, both leprechauns and lepruchawns.  double-check those.
+
+armor blocking message:
+You attack the Huge Mutant Fire Fox.
+The Huge Mutant Fire Fox is magically aligned with earth
+The Huge Mutant Fire Fox attacks 3 times.
+The Huge Mutant Fire Fox misses you.
+Your Bronze Vambrace absorbs 2 damage.
+The Huge Mutant Fire Fox causes 6 damage.
+The Huge Mutant Fire Fox misses you.
+
+Armor breaking:
+Your Cod Piece (1%) has worn out. 
+You take off a Cod Piece. 
+You lose a Cod Piece. 
+Your Cod Piece absorbs 0 damage. 
+Mani causes 3 points of damage.
+
+Daemonic melting:
+You attack the GNU.
+You cause 10 points of damage, and receive 10 experience.
+The letter opener slurps up the life blood...
+You lose a Daemonic Letter Opener.
+The letter opener melts.
+
+Vorpal weapons:
+You are hot.
+You attack the Bling Wraith.
+Your Vorpal Blade goes Snicker Snack.
+You slay the Bling Wraith.
+You gain a Mercury Bling (1).
+
+Absorbed weapons:
+You attack the Large Living Tar.
+You cause 4 damage, and receive 40 xp.
+The Large Living Tar causes 10 damage.
+The living tar extends a pseudopod and absorbs your weapon.
+You can hear it happily digesting it.
+You lose a Breakfast Club (0).
+Now using Fists.
+
+TODO: invalidate data if it isn't from the current version?
+
+Treasure chests:
+You open the chest...
+You lose a Treasure Chest.
+You gain a Fire Knife.
+You gain a Plan for a Survey Vessel.
+You gain 20000 Gold Pieces.
+You gain a Watch Bling.
+
+
+Ruins (and storerooms?):
+You search...
+You gain a Sun Stone.
+[2007-02-26 16:46:50]
+You search...
+You gain a Fire Cracker.
+
+Not actually useful, but for reference, pets vs. multi-monsters:
+(note that the number decrements before damage is applied, when pets are attacking)
+You attack the 10 Gulls.
+You cause 40 points of damage, and receive 240 experience.
+Octopussy misses the 6 Gulls.
+Miss Moneypwny attacks the 5 Gulls for 10 damage.
+The 5 Gulls attacks 5 times.
+The 5 Gulls causes 2 points of damage.
+The 5 Gulls misses you.
+The 5 Gulls misses you.
+The 5 Gulls misses you.
+The 5 Gulls misses you.
+
+from every jungle on the wiz retreat you can either see "Sandy Beach" or "Mt. Spooky" (if you have field glasses vision)
+
+Red Bull Drinking:
+Now using Can of Red Bull.
+[2007-02-29 12:01:25]
+You lose a Mug of Coffee (proper).
+You gain an Empty Mug.
+Wow, you feel great. Let's go!
+[2007-02-29 12:01:13]
+You lose a Mug of Coffee.
+You gain an Empty Mug.
+You feel a bit better. Damn caffeine tolerance.
+100 cups of coffee. You enter a state of perfect caffination.
+[2007-02-29 12:01:09]
+Now using Mug of Coffee.
+[2007-02-29 12:01:05]
+You lose a Can of Red Bull.
+You feel a bit better. Damn caffeine tolerance.
+[2007-02-29 12:00:56]
+Now using Can of Red Bull.
+
+phaser breakage:
+Out of power.
+You lose a Phaser.
+You gain a Broken Phaser.
+
+
+Doom wand upgrades:
+You attack the Rubber Duckie.
+Your Doom Wand is currently 100% charged!
+You lose a Doom Wand.
+You gain a Death Wand.
+DAMN YOU, KAOS DRAGON!
+
+
+Half-remembered monster drop tables:
+6 in the 'kingdom
+1-2 up North
+3 in Oz
+Many monsters have specialized tables they may draw from in addition to 0 or more draws from other tables.  Each table has a list of items and a weight assigned to each item, and about a 5% chance to upgrade or downgrade the table.
+
+[06:53]	<darkling>	So, for example, Ninjas have:
+[06:53]	<darkling>	$opts{items}->{Catana} = (int rand 2);
+[06:53]	<darkling>	$opts{items}->{ThrowingStar} = (int rand 20);
+[06:53]	<darkling>	GAME::Stuff::huge( $opts{items} );
+
+
+Accuracy guide?
+Number of Empty Searches 	 Remaining chance of being found
+10 								26%
+30 								10%
+60 								5%
+90 								3.3%
+100 							3.0%
+300 							1%
+600 							0.5%
+900 							0.33%
+1000 							0.30% 
+
+ Number of Searches in a location 	 Accuracy
+0 									Nonexistent
+1-99 								Very Poor
+100-500 							Poor
+501-1000 							Fair
+1001-2500 							Good
+2501-5000 							Very Good
+5001+ 								Excellent
+
+
+possible sword breakage:
+Your sword seems more probable.
+You lose a Possible Sword.
+You gain a Sharp Sword.
+
+Tweak the "contributor point" system to reward data submitted where there are few entries?  +2 points if <100 entries, +1 point if <1000 entries?
+
+
+Magic mines are called "Magic Mine".  Exclude them from submitting data.
+
+Possible things to add: baned weapon breakage.  As it is, all parentheses are stripped, and supposedly, baned weapons have different break stats. (10x less likely?)
+
+
+
+Rainbow blade breakage:
+You lose a Rainbow Blade.
+Your rainbow blade is gone!
+
+Pirates always have (X Cannon) in their names
+
+bowling (remembered, not copy-pasted):
+You bowl...
+You lose a Bowling Ball.
+You gain a Spare.
+You gain a Bowling Ball.
+
+
+Viking names:
+Hakan
+Guthmundr
+Thorbrandr
+Brandulfr
+Mani
+Ragnar
+Stigandr
+Arni
+Fridjolf
+Karli
+Thorkell
+Olaf
+Ingolfr
+Guttormr
+Gamli
+Sigmundr
+Snorri
+Eirikr
+Brandr
+Olafr
+Halfdan
+Jatmundr
+Ulfr
+Egil
+Leif
+Asbjörn
+Ogmundr
+Herleif
+Arnolf
+Stig
+Alfr
+
+The ball:
+You lose a Ball Invitation. 
+You have a ball. 
+You gain a Bowling Ball.
+
+
+The Head Hunter locks the target.
+The Head Hunter baits the line.
+The Head Hunter slowly spreads the net.
+The Head Hunter catches you (not certain)
+
+Death message:
+You have died.
+(full message is more like "You have died. Luckily the '[Kk]ing has set up...")
+
+
+Bull whip snatching:
+You attack the Small Scissor Beast.
+You cause 9 damage, and receive 18 xp.
+You lose a Bull Whip.
+The Small Scissor Beast grabs your whip and gets it off you.
+The Small Scissor Beast misses you.
+
+Fairies:
+You attack the Al-o-ish-us the Fairy.
+You lose a Nuff.
+'Thank you. We were wondering where that went.'
+You gain a Gram of Fairy Dust.
+
+
+
+Thief's steal vs. stab ratio:
+You attack the Naughty Thief.
+You cause 9 damage, and receive 90 xp.
+The thief lunges for a Bucket...
+You lose a Bucket.
+The thief dodges away.
+
+You attack the Naughty Thief.
+You miss.
+The thief lunges for a D20...
+...but stabs(OR SLASHES) with his knife(OR SWORD, for big thieves) instead.
+
+
+Poisoning:
+You are a tiny bit cold.
+You attack the Snake.
+You cause 9 damage, and receive 9 xp.
+The Snake causes 1 damage.
+You are poisoned.
+
+
+You are a tiny bit cold.
+You attack the Snake.
+You cause 9 damage, and receive 9 xp.
+The Snake causes 1 damage.
+You are poisoned.
+
+
+Thief:
+	Thief
+	Sneaky
+	Merry
+	Feckless
+	Greasy
+	Naughty
+	Smelly
+BadThief:
+	Thief
+	Skilled
+	Evil
+	Cunning
+	Clever
+	Cruel
+	Fiendish
+	
+How to tell the difference between a disguise kit and a normal player, since alignment is important (username != display name)
+ 
+ 
+seal kudos loss:
+You attack the Cute Seal.
+Your Vorpal Blade goes Snicker Snack.
+You slay the Cute Seal.
+You add the trophy to your case!
+You gain a Seal Pelt.
+You gain 74 Gold Pieces.
+You feel like you've been naughty.
+
+
+
+special hit/miss cases: accuracy with a silver weapon against a full-sized dragon.
+
+Glass and harpoon baned weapons: is this really doable?  Harpoons, probably---when they wear out, I think they actually give a proper "wear out" message.  Glass swords, no.  Once it's gone, I can't tell if it was ever there except by tracking every page-refresh, and that's a significant CPU/memory/HD load for a terribly trivial thing.  Hm, maybe not---just look at previous equipped item.
+
+Items wearing out theory:
+Look for "You (go|chill) (North|East|South|West)\."
+Update worn items every time we see either an inventory page/side-panel, or the "you take off/wear" message.
+Send a message on EVERY move update.
+Pray that people look at their equipment panes from time to time, so any bad data gets cut off before too long.
+Pray that people don't move faster than the script can measure.
+You take off a T-Shirt.
+You put on a T-Shirt.
+You put on 2 Winged Boots.
+You take off 2 Winged Boots.
+
+
+[03:00]	<Heyus2>	can i request a page?
+[03:00]	<Heyus2>	most popular monster based on sample size
+[03:00]	<Heyus2>	top 10 most popular monsters, top 25 most common item drops  
+(based on total drops, not how many times the category dropped.  Gold wins by a landslide.)
+[03:00]	<Heyus2>	top 10 favorite weapons to use
+
+
+Worn item wearing:
+Your Rabbit Foot has worn out.
+You take off a Rabbit Foot.
+You lose a Rabbit Foot.
+(note the distinct lack of a movement message.)
+Flap-Flap!
+Your wings are clipped.
+You take off a Pair of Daedalus Wings.
+You lose a Pair of Daedalus Wings.
+You gain 4 Sheets of Paper.
+You gain 5 Pieces of Wood.
+
+
+As a separate issue: Create a simple Javascript page to compute your Hours To Max AP, as an integer, with no particular care of WHICH hour it is.  Consider hats (50AP bonus for 24 hours w/wizard hat or crown), fashion (good, medium, bad), AP recovery time, and existence of party.
+
+
+Data integrity: a few things (especially storeroom-searching) just check for "you gain" if you're in the right place.  This can easily occur due to bags or crafting.  Possible solution: in storerooms, delete the "search" button, and replace it with a button that sets a flag in the script and then searches, so it'll pick up the searched item next refresh.  Simpler solution:  Look for "you lose" or holding a bag, and skip it if that happens.
+(storeroom searching done, anyway.  Haven't checked for the rest.)
+
+
+
+Monsters in the Gauntlet drop no treasure.  Exclude them from reporting.
+The gauntlet squares have a unique name... as do the healer squares "Gauntlet" and "First Aid Point"
+
+
+Summon stone breaking:
+You place the stone on the ground and chant the name of bubba.
+bubba, bubba, BUBBA!
+Duke Bubba MD appears looking a little surprised. The summon stone breaks completely.
+You lose a Summon Stone.
+
+You place the stone on the ground and chant the name of spacer one.
+spacer one, spacer one, SPACER ONE!
+Armourer Spacer One appears looking a little surprised. They pick up the summon stone, as is traditional.
+You lose a Summon Stone.
+
+A vortex sucks you up. It seems that you have been summoned by Armourer Spacer One. You pick up the Summon Stone (as is traditional).
+You gain a Summon Stone.
+
+
+MINE WEARING OUT.  (note the lack of item gained when it finally gives up the ghost.)
+You mine...
+You gain an Anti-Hista.
+
+You mine...
+The mine collapses.
+
+
+
+Update the Foraging page to be like the Farming page, and also cull the Hills data that snuck into Civilized Green.
+
+
+
+Theftage:
+You gain 31 Empty Bottles.
+Great Lord harvey MD attacks you using Moon On A Stick.
+Great Lord harvey MD has mooned you!
+
+You fail.
+Great Lord harvey MD attacks you using Moon On A Stick.
+Great Lord harvey MD has mooned you!
+
+You fail.
+Apprentice Ignatz attacks you using Summon Stone.
+They cause 2 points of damage.
+
+You fail.
+Apprentice Ignatz attacks you using Summon Stone.
+They cause 2 points of damage.
+
+
+
+Wormholes (for wear & tear calcs)
+You lose 2 Glowing Sun Stone Blings.
+Wooosh! It is sucked through the rip in space.
+
+You are hot.
+You lose a Healing Bling.
+Wooosh! It is sucked through the rip in space.
+Krunt! The wormhole has collapsed.
+You lose a Wormhole Entrance (My Vault (O19)).
+Now using Fists.
+
+
+
+Identifying hills is still a bit hosed.
+
+
+
+Locating the Ice Cream Van: 
+At 4:48AM, Tuesday June 12, the Van was at 89E (95N?), going east towards Water City.
+At 4:53AM, it was at 94E.
+Remember, the path is 91*4 squares long, because it doesn't pause an extra turn at the shrines.
+
+
+
+Add snowmen as a "confused" monster (and/or lump them together); I don't want them cluttering my statistics. (Simply implemented naming.)
+
+
+
+FLASH GUN: (both "fire" message, and "out of power" message)
+You fire your flashgun
+Woomph!
+Your flash gun has run out of power
+You lose a Flash Gun.
+You gain a Flash Gun (Flat).
+Now using Fists.
+
+
+
+Sort item drops (on items page, at least) by chance of drop.
+
+
+
+Odds of getting a shooting star when playing the harvest song.
+
+
+Maybe BB could track what alignments the rainbow wand changes?
+
+
+Another optimization, instead of the above: add an eventListener to every single input on the screen, and when it's clicked, set a few variables to remember what the input was.  Possibly more trouble than it's worth, but might cut down the data-analysis a bit (only have to check for what was tested, plus a few "anytime" pieces of data), and increase accuracy on some of the more vague things being measured.
+
+
+Another optimization: change the database to run off of individual (date-and-username stamped) data thingummies submitted, not aggregate data.  In theory, it should still be possible to run a decent-sized query in ~1 second, as long as there's less than a million rows or so, as long as the vast majority of the data-processing is done on the server rather than the client.  Possible flaw: the "Bigdump database import" on the website only takes files up to 5 MB in size, and I've already outstripped that.  If I go past 5MB, then my ability to back up my database is destroyed.
+(Partly done; some things lack timestamps, but contributor scores and monster drops have it.)
+
+
+Ambulance Search Odds: action is act_locuse, current location "Inside Ambulance"
+
+
+DONE TO THIS POINT
+
+
+[23:14]	<GlamDistracted>	Here's a feature idea. Appraising drops and organizing monsters by various criteria. So have a tool figure out the general price of items dropped by a monster (according to stats no less recent than a month or two, mind you; no old data) and have that be one option that, when called, will appraise the value of a given monster's drop tables.
+[23:14]	<GlamDistracted>	Sounds ridiculous, I'm sure.
+[23:16]	<GlamDistracted>	Also a bit arbitrary.
+
+
+
+RED BULL:
+You lose a Can of Red Bull.
+Argh. Caffeine crash!
+(apparently adds 15 to both total caffeine count AND current caffeination level.)
+You lose a Can of Red Bull.
+You feel a bit better. Damn caffeine tolerance.
+(apparently adds 15 to current caffeination level, but NOT total caffeine count.)
+
+Odds of getting a Morpheus: apparently, not getting a YSMR in 24 Morphei is about 19%.  This implies a ~6.6% chance of dropping it, or about 1 in 15.
+
+
+Random tangent: clicking ruby slippers is act_item_use
+
+
+Optimization: what messages occur at the top of every page?  Can I get the various regexes to check just one line, instead of every line?  And can I optimize searching for these stripped lines a bit by getting all of the status effects simultaneously?  (On the flipside, does searching for a bazillion possible messages take too much time?)
+PERSONAL MESSAGES:
+Everything's spinning
+Temperature
+Blue pill
+Feeling like crap
+Alcohol
+You feel funny (magic herb)
+The Glow Worm lets you pass.
+Flap-Flap! (moving w/daedalus wings)
+Fashion
+(do red pills or strange powders have special messages?)
+EXTERNAL MESSAGES:
+People giving you things
+Market-purchase messages
+Palantir notification
+Speaking
+People teleporting
+Practicing instruments
+
+Here's some in order:
+You feel hard!
+You feel lovely!
+You are a bit cold.
+
+
+
+
+
+
+[04:30]	<PotatoEngineer>	Heyus2: otherwise, I'm going to have to run through the entire monster-drop table summing each item across the monsters that dropped it, and then sorting that stack and picking the top 25 items.
+[04:33]	<darksatanic>	PotatoEngineer: That should be one SQL query
+[04:33]	<PotatoEngineer>	I suspected as much, but I haven't the foggiest on how to construct it.
+[04:34]	<darksatanic>	SELECT monster, SUM(itemcount) AS total FROM monster_drop_table GROUP BY monster ORDER BY total LIMIT 25;
+[04:35]	<darksatanic>	SUM() is an aggregate function. If you use aggregate functions, all of the items selected which _aren't_ wrapped up in an aggregate function need to be in the GROUP BY clause.
+[04:36]	<darksatanic>	And it does exactly what it says on the tin -- if you GROUP BY a column, it makes a separate group of all of the unique values in that column,
+[04:36]	<darksatanic>	and then applies the aggregate function to all the rows in that group separately.
+
+Another MySQL lesson:  How to update the probabilities based on multiple tables.
+update monster_drop set probability = (d.count / k.count - sqrt(d.count/k.count * (1-d.count/k.count)/k.count)  ) from monster_drop d, monster_kills k where d.monster = k.monster
+
+(originally told to me as) update droptable set devvar = (d.hits / k.total... ) from droptable d, kills k where d.(foriegn key for k) = k.(primary key)
